@@ -7,6 +7,7 @@ public class ConcreteCommand1 extends Command{
         this.receiver = receiver;
     }
 
+    @Override
     public void execute(){
         this.receiver.doSomething();
     }
