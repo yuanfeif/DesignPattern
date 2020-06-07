@@ -3,7 +3,7 @@ package Proxy.DynamicProxy;
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Proxy;
 
-public class Client {
+public class DynamicProxyClient {
     public static void main(String[] args) {
         Subject subject = new RealSubject();
         InvocationHandler handler = new DynamicProxyHandler(subject);
